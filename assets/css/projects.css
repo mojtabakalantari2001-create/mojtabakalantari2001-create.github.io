@@ -55,6 +55,19 @@
 .project-related>div{display:flex;flex-wrap:wrap;gap:12px}
 .project-related a{display:inline-flex;gap:16px;align-items:center;background:#fff;padding:13px 18px;border:1px solid #d5e4db;border-radius:7px;font-size:14px}
 .project-page .footer{margin-top:0}
+.experience-track-link .track-card-label{gap:16px}
+.experience-track-link .track-card-label span{font-size:11px;line-height:1.6;text-align:right}
+.experience-track-link .track-card-body h2{font-size:22px;min-height:62px;margin-bottom:12px}
+.project-page .experience-card-role{font-size:13px!important;font-weight:650;color:#176b59!important;min-height:0!important;margin-bottom:15px}
+.work-detail-link{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:650;margin-top:12px}
+.experience-page .work-detail{padding:32px;margin-bottom:32px;background:#fff;border-color:#dce8e1}
+.experience-page .work-detail .company-title{font-size:26px;line-height:1.4}
+.experience-page .work-detail .experience-highlights{margin-top:26px}
+.experience-page .work-detail .experience-highlights li{font-size:15px;line-height:1.9}
+.experience-page .teaching-block{margin-top:40px}
+.experience-page .teaching-block h3{font-size:23px}
+.experience-page .work-projects{margin-bottom:28px}
+.experience-page .work-page-actions{padding-top:8px}
 @media(max-width:991px){.project-track-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-track-link .track-card-body h2{min-height:0}.project-page .track-card-body>p{min-height:0}}
 @media(max-width:600px){.project-hero{padding:102px 0 44px;min-height:330px}.project-hero h1{font-size:32px;letter-spacing:-1px}.project-hero-description{font-size:15px}.project-breadcrumbs ol{margin-bottom:22px;font-size:12px}.project-content{padding:30px 0 42px}.project-track-grid{grid-template-columns:1fr;gap:20px}.project-page .project-section-block{padding:24px 20px}.project-page .project-section-block>h2{font-size:23px}.project-page .subproject-tab-nav{gap:5px;padding:5px}.project-page .subproject-tab-btn{flex:1 1 46%;min-width:120px;padding:10px;font-size:12px}.project-spec{padding:14px 16px}.project-spec dd{font-size:17px}.project-page .project-description{font-size:15px!important}.project-focus ul{display:grid;gap:12px}.project-related>div{display:grid}.project-page-actions{gap:20px}.project-index-intro h2{font-size:24px}}
 @media(prefers-reduced-motion:reduce){.project-hero #network-canvas{display:none}}
