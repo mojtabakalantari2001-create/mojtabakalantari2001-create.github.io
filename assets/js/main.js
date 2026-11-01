@@ -385,6 +385,8 @@
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     let width, height;
     let particles = [];
     
@@ -400,28 +402,37 @@
     const mouseRadiusSq = mouse.radius * mouse.radius;
 
     const brandPalette = {
-      dots: ['rgba(84, 84, 84, ', 'rgba(51, 51, 51, ', 'rgba(184, 160, 126, '],
-      line: '84, 84, 84',
-      mouseLine: '184, 160, 126'
+      dots: ['rgba(0, 107, 91, ', 'rgba(18, 63, 53, ', 'rgba(0, 137, 117, '],
+      line: '0, 107, 91',
+      mouseLine: '0, 107, 91'
     };
 
     function resize() {
       if (!canvas.parentElement) return;
-      width = canvas.width = canvas.parentElement.offsetWidth;
-      height = canvas.height = canvas.parentElement.offsetHeight;
+      width = canvas.parentElement.clientWidth;
+      height = canvas.parentElement.clientHeight;
+      const scale = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = Math.round(width * scale);
+      canvas.height = Math.round(height * scale);
+      ctx.setTransform(scale, 0, 0, scale, 0, 0);
+      particles.forEach(particle => {
+        particle.x = Math.max(0, Math.min(particle.x, width));
+        particle.y = Math.max(0, Math.min(particle.y, height));
+      });
     }
 
     window.addEventListener('resize', resize);
     resize();
 
     if (canvas.parentElement) {
-      canvas.parentElement.addEventListener('mousemove', function (e) {
+      canvas.parentElement.addEventListener('pointermove', function (e) {
+        if (e.pointerType === 'touch' || motionPreference.matches) return;
         const rect = canvas.getBoundingClientRect();
         mouse.x = e.clientX - rect.left;
         mouse.y = e.clientY - rect.top;
-      });
+      }, { passive: true });
 
-      canvas.parentElement.addEventListener('mouseleave', function () {
+      canvas.parentElement.addEventListener('pointerleave', function () {
         mouse.x = null;
         mouse.y = null;
       });
@@ -487,7 +498,7 @@
 
     function animate() {
       requestAnimationFrame(animate);
-      if (!isVisible) return; // Skip drawing and math if out of view
+      if (!isVisible || document.hidden || motionPreference.matches) return;
 
       ctx.clearRect(0, 0, width, height);
 
