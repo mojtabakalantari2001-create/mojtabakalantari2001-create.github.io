@@ -1,0 +1,53 @@
+/* Personal content and portrait adaptations for Mojtaba Kalantari.
+   Base design: Folio / BootstrapMade; source adaptation: Farhad Hoseyni. */
+.header{--background-color:rgba(82,78,68,.9)}
+.mobile-nav-toggle{border:0;background:transparent;padding:0;line-height:1}
+.hero{min-height:max(740px,100svh);background:#e6e1da;overflow:hidden}
+.hero>img{left:auto;right:0;top:80px;width:67%;height:calc(100% - 80px);object-fit:cover;object-position:50% 0}
+.hero:before{background:linear-gradient(90deg,#e8e3db 0%,rgba(232,227,219,.98) 23%,rgba(232,227,219,.82) 39%,rgba(232,227,219,.04) 73%)}
+.hero .description{min-height:44px;max-width:720px}
+.hero .social-links a{color:#545454}
+.hero h2{letter-spacing:-1.5px}
+.portfolio-tools{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 24px}
+.portfolio-tools span{font-size:12px;background:#f4f1ec;border:1px solid #e4ddd2;padding:4px 10px;border-radius:4px;color:#6a5d48}
+.education-card{height:100%;max-width:none}
+.education-image img{width:120px;height:120px!important;object-fit:contain}
+.education .row{width:100%}
+.education-thesis{font-size:13px;line-height:1.8;text-align:left;border-top:1px solid #eee;padding-top:16px;margin-top:16px}
+.teaching-block{margin-top:40px}
+.teaching-block .experience-card{cursor:default}
+.teaching-block h3{font-size:24px;margin-bottom:20px}
+.job-note{font-size:13px;line-height:1.8;color:#737373;margin-top:22px}
+.track-card-label{display:flex;align-items:center;justify-content:space-between;padding:22px;background:#f7f5f1;border-bottom:1px solid #eae5dc;color:#8e7552}
+.track-card-label i{font-size:28px;line-height:1}
+.track-card-label span{font-size:12px;letter-spacing:.04em}
+.track-card-body h3{font-size:23px;line-height:1.4;margin-bottom:15px;min-height:64px}
+.track-card-body>p{min-height:88px}
+.project-band{font-size:12px!important;font-weight:600;color:#8c7150!important;margin-bottom:0!important;border-top:1px solid #eee;padding-top:14px}
+.publication-status{background:#f3eee6;border:1px solid #dfd2bf;color:#78613d;font-size:12px;font-weight:500;padding:7px 10px}
+.publication-description{font-size:14px;line-height:1.8;margin-top:14px}
+.publications .title{font-size:23px;line-height:1.5}
+.footer .contact-email{font-style:normal;font-size:19px;overflow-wrap:anywhere;margin-bottom:22px}
+.footer .contact-email a{color:inherit}
+.footer .credits{font-size:12px;margin-top:8px}
+[role=button]:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #997d56;outline-offset:5px}
+@media(max-width:1199px){.hero h2{font-size:54px}.hero .description{font-size:23px}.hero>img{width:72%}.hero:before{background:linear-gradient(90deg,#e8e3db 0%,rgba(232,227,219,.94) 28%,rgba(232,227,219,.75) 45%,rgba(232,227,219,.04) 85%)}}
+@media(max-width:991px){.track-card-body>p{min-height:0}.track-card-body h3{min-height:0}.exp-nav-card{height:100%}}
+@media(max-width:767px){
+ .hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding:120px 0 0}
+ .hero>.container{order:0}
+ .hero>img{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:1;order:1;margin-top:34px;object-fit:cover;object-position:center}
+ .hero:before{display:none}
+ .hero h2{font-size:38px;letter-spacing:-1.2px}
+ .hero .description{font-size:20px;min-height:66px;line-height:1.6;max-width:100%}
+ .hero .social-links{margin-top:16px}
+ .header .logo h1{font-size:24px}
+ .education-content h3{font-size:23px}
+ .about .profile-img{margin:0 30px 40px 15px;max-width:320px}
+ .about .profile-img img{margin-left:20px;margin-top:-35px;margin-bottom:20px}
+ .publications .title{font-size:20px}
+ .track-modal-body{padding:20px}
+ .footer .contact-email{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}[data-aos]{opacity:1!important;transform:none!important}}
+@media print{.header,.scroll-top,.typed-cursor{display:none!important}.hero{min-height:0;padding:25px 0}.hero>img{display:none}.hero:before{display:none}.experience-story-section{min-height:0}.experience-story-grid{position:static}.exp-card-pane{display:block!important;opacity:1!important;transform:none!important}.exp-sticky-nav{display:none}.experience-story-grid{display:block}[data-aos]{opacity:1!important;transform:none!important}.modal{display:none!important}}
