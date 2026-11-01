@@ -21,6 +21,7 @@
 <meta property="og:image" content="https://mojtabakalantari2001-create.github.io/assets/img/profile/hero-park.webp">
 <script>document.documentElement.classList.add("js");</script>
 <meta name="theme-color" content="#006b5b">
+<link rel="stylesheet" href="assets/css/projects.css?v=eda55a3070">
 </head>
 <body class="index-page">
 <header class="header d-flex align-items-center fixed-top" id="header">
@@ -34,7 +35,7 @@
 <li><a href="#about">About</a></li>
 <li><a href="#education">Education</a></li>
 <li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
+<li><a href="projects/index.html">Projects</a></li>
 <li><a href="#publications">Publications</a></li>
 <li><a download="Mojtaba_Kalantari_CV.pdf" href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
 </ul>
@@ -260,11 +261,12 @@
 <div class="container section-title" data-aos="fade-up" data-aos-delay="0">
 <h2 class="dark-gray-bold">Research &amp; Projects</h2>
 <p>Selected work in antennas, passive microwave components, and RF hardware. Select a track to explore its projects.</p>
+<a class="projects-all-link" href="projects/index.html">View All Projects <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
 </div>
 <div class="container">
 <div class="row gy-4" data-aos="fade-up" data-aos-delay="0">
 <div class="col-lg-4 col-md-6">
-<div class="track-card-container" data-bs-target="#modal-track-filters" data-bs-toggle="modal" style="cursor: pointer;" role="button" tabindex="0" aria-label="Explore Filters &amp; Diplexers">
+<a class="track-card-container project-track-link" aria-label="Explore Filters &amp; Diplexers" href="projects/filters-diplexers.html">
 <div class="track-card-label">
 <i class="bi bi-sliders" aria-hidden="true"></i><span>3 Projects</span>
 </div>
@@ -272,15 +274,14 @@
 <h3>Filters &amp; Diplexers</h3>
 <p>Coupling-matrix synthesis, coaxial resonators, and printed passive networks for multiband RF applications.</p>
 <div class="track-card-footer">
-<span class="track-explore-btn">
-                                        Explore Sub-Projects <i class="bi bi-arrow-right"></i>
+<span class="track-explore-btn">View Projects <i class="bi bi-arrow-right"></i>
 </span>
 </div>
 </div>
-</div>
+</a>
 </div>
 <div class="col-lg-4 col-md-6">
-<div class="track-card-container" data-bs-target="#modal-track-antennas" data-bs-toggle="modal" style="cursor: pointer;" role="button" tabindex="0" aria-label="Explore Antennas &amp; Arrays">
+<a class="track-card-container project-track-link" aria-label="Explore Antennas &amp; Arrays" href="projects/antennas-arrays.html">
 <div class="track-card-label">
 <i class="bi bi-broadcast-pin" aria-hidden="true"></i><span>4 Projects</span>
 </div>
@@ -288,15 +289,14 @@
 <h3>Antennas &amp; Arrays</h3>
 <p>Crossed-dipole elements, antenna interaction, feed networks, cellular arrays, and microwave reflector links.</p>
 <div class="track-card-footer">
-<span class="track-explore-btn">
-                                        Explore Sub-Projects <i class="bi bi-arrow-right"></i>
+<span class="track-explore-btn">View Projects <i class="bi bi-arrow-right"></i>
 </span>
 </div>
 </div>
-</div>
+</a>
 </div>
 <div class="col-lg-4 col-md-6">
-<div class="track-card-container" data-bs-target="#modal-track-hardware" data-bs-toggle="modal" style="cursor: pointer;" role="button" tabindex="0" aria-label="Explore RF Hardware &amp; Measurement">
+<a class="track-card-container project-track-link" aria-label="Explore RF Hardware &amp; Measurement" href="projects/rf-hardware-measurement.html">
 <div class="track-card-label">
 <i class="bi bi-cpu" aria-hidden="true"></i><span>3 Projects</span>
 </div>
@@ -304,12 +304,11 @@
 <h3>RF Hardware &amp; Measurement</h3>
 <p>Cellular repeaters, RF PCB development, prototype assembly, testing, and troubleshooting.</p>
 <div class="track-card-footer">
-<span class="track-explore-btn">
-                                        Explore Sub-Projects <i class="bi bi-arrow-right"></i>
+<span class="track-explore-btn">View Projects <i class="bi bi-arrow-right"></i>
 </span>
 </div>
 </div>
-</div>
+</a>
 </div>
 </div>
 </div>
@@ -353,94 +352,6 @@
 </div>
 </footer>
 <a aria-label="Scroll to Top" class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top"><i class="bi bi-arrow-up-short"></i></a>
-<div aria-hidden="true" aria-labelledby="modal-track-filters-label" class="modal fade" id="modal-track-filters" tabindex="-1">
-<div class="modal-dialog modal-xl modal-dialog-centered">
-<div class="modal-content">
-<div class="modal-header track-modal-header">
-<h3 class="modal-title fs-5" id="modal-track-filters-label">
-<i class="bi bi-sliders me-2" aria-hidden="true"></i>Filters &amp; Diplexers</h3>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body track-modal-body"><div class="row g-3">
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>Coaxial-resonator diplexer</h4>
-<p>Design and simulation of a mechanical diplexer using the coupling matrix method.</p>
-</div>
-<p class="project-band">1710–1785 MHz &amp; 1805–1880 MHz</p></article></div>
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>Microstrip diplexer</h4>
-<p>Development of a practical, low-cost printed diplexer incorporating band-stop filters.</p>
-</div>
-<p class="project-band">1690–2200 MHz &amp; 2400–2690 MHz</p></article></div>
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>Microwave filters</h4>
-<p>Design and optimization of passive microwave filters.</p>
-</div>
-<p class="project-band">K, Ku &amp; Ka bands</p></article></div>
-</div></div>
-</div>
-</div>
-</div>
-<div aria-hidden="true" aria-labelledby="modal-track-antennas-label" class="modal fade" id="modal-track-antennas" tabindex="-1">
-<div class="modal-dialog modal-xl modal-dialog-centered">
-<div class="modal-content">
-<div class="modal-header track-modal-header">
-<h3 class="modal-title fs-5" id="modal-track-antennas-label">
-<i class="bi bi-broadcast-pin me-2" aria-hidden="true"></i>Antennas &amp; Arrays</h3>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body track-modal-body"><div class="row g-3">
-<div class="col-md-6"><article class="track-modal-card"><div>
-<h4>Crossed-dipole elements</h4>
-<p>Base-station radiators, including work on reduced interaction and polarization tuning.</p>
-</div>
-<p class="project-band">690–960 / 1690–2690 / 2300–3800 MHz</p></article></div>
-<div class="col-md-6"><article class="track-modal-card"><div>
-<h4>Phase shifter &amp; fixed-beam array</h4>
-<p>Nine-element true-time-delay phase shifter with 12° electrical tilt, and a 12-element fixed-beam array with 6° elevation tilt.</p>
-</div>
-<p class="project-band">690–960 MHz / 2300–3800 MHz</p></article></div>
-<div class="col-md-6"><article class="track-modal-card"><div>
-<h4>Hat-fed reflector antennas</h4>
-<p>Design and testing of 2-, 3-, and 4-foot reflectors, including absorber work for backlobe reduction.</p>
-</div>
-<p class="project-band">15 / 18 / 23 / 26 GHz</p></article></div>
-<div class="col-md-6"><article class="track-modal-card"><div>
-<h4>Specialist antennas</h4>
-<p>X-band circularly polarized horn antenna and a 406 MHz omnidirectional antenna for weather-balloon communication.</p>
-</div></article></div>
-</div></div>
-</div>
-</div>
-</div>
-<div aria-hidden="true" aria-labelledby="modal-track-hardware-label" class="modal fade" id="modal-track-hardware" tabindex="-1">
-<div class="modal-dialog modal-xl modal-dialog-centered">
-<div class="modal-content">
-<div class="modal-header track-modal-header">
-<h3 class="modal-title fs-5" id="modal-track-hardware-label">
-<i class="bi bi-cpu me-2" aria-hidden="true"></i>RF Hardware &amp; Measurement</h3>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body track-modal-body"><div class="row g-3">
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>Cellular repeaters</h4>
-<p>Channel-selective and simple-mode repeaters, with supporting indoor and outdoor antennas.</p>
-</div>
-<p class="project-band">2G / 3G / 4G</p></article></div>
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>RF PCBs &amp; prototypes</h4>
-<p>PCB design, assembly, RF measurements, validation, documentation, and bills of materials.</p>
-</div>
-<p class="project-band">1–4-layer PCBs</p></article></div>
-<div class="col-md-4"><article class="track-modal-card"><div>
-<h4>RF absorbers</h4>
-<p>Manufacture and testing of pyramidal absorbers and structures for reflector-antenna backlobe reduction.</p>
-</div>
-<p class="project-band">Pyramidal absorbers: 1–12 GHz</p></article></div>
-</div></div>
-</div>
-</div>
-</div>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/aos/aos.js"></script><script src="assets/vendor/typed.js/typed.umd.js"></script><script src="assets/js/main.js?v=55a8c1320a"></script><script src="assets/js/personal.js"></script><noscript><style>[data-aos]{opacity:1!important;transform:none!important}.exp-card-pane{display:block!important;opacity:1!important;transform:none!important}.experience-story-section{min-height:auto}.experience-story-grid{position:static}.navmenu ul{display:block;position:static}</style></noscript>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/aos/aos.js"></script><script src="assets/vendor/typed.js/typed.umd.js"></script><script src="assets/js/main.js?v=55a8c1320a"></script><script src="assets/js/personal.js?v=8769570689"></script><noscript><style>[data-aos]{opacity:1!important;transform:none!important}.exp-card-pane{display:block!important;opacity:1!important;transform:none!important}.experience-story-section{min-height:auto}.experience-story-grid{position:static}.navmenu ul{display:block;position:static}</style></noscript>
 </body>
 </html>

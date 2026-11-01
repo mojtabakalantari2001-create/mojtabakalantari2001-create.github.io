@@ -1,0 +1,61 @@
+/* Project pages extend the retained Folio / Farhad Hoseyni template. */
+.project-track-link{display:block;text-decoration:none;color:inherit;height:100%;cursor:pointer}
+.project-track-link:hover{color:inherit}
+.project-track-link .track-card-body h2{font-size:23px;line-height:1.4;min-height:64px;margin-bottom:15px;font-weight:700;color:#173f35}
+.projects-all-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;font-weight:600;font-size:14px}
+.project-page{background:#f7faf8}
+.project-page h1,.project-page h2,.project-page h3{color:#173f35}
+.project-hero{position:relative;isolation:isolate;overflow:hidden;min-height:370px;padding:122px 0 62px;background:#eaf4ee}
+.project-hero #network-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.project-hero-content{position:relative;z-index:1;text-align:center}
+.project-breadcrumbs ol{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:0;margin:0 0 24px;list-style:none;font-size:13px;color:#4a6c60}
+.project-breadcrumbs li+li:before{content:'/';margin-right:8px;color:#719386}
+.project-breadcrumbs a{color:#236a55}
+.project-eyebrow{font-size:11px!important;letter-spacing:.13em;font-weight:700;color:#27735c!important;margin:0 0 14px!important}
+.project-hero h1{font-size:clamp(32px,4vw,48px);line-height:1.25;font-weight:750;letter-spacing:-1.4px;max-width:1080px;margin:0 auto 16px}
+.project-hero-description{max-width:780px;margin:0 auto;font-size:17px;line-height:1.75;color:#355f50}
+.project-content{padding:48px 0 64px}
+.project-index-intro{margin:0 0 30px;max-width:740px}
+.project-index-intro h2{font-size:27px;letter-spacing:-.7px;font-weight:700;margin-bottom:12px}
+.project-index-intro p{color:#566d62;line-height:1.8;margin:0}
+.project-track-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.project-page .track-card-container{background:#fff}
+.project-page .track-card-body{padding:25px}
+.project-page .track-card-body>p{color:#53685e;font-size:14px;line-height:1.8}
+.project-page .track-card-label{padding:23px 25px}
+.project-tools{border-top:1px solid #dce8e1;padding-top:30px;margin-top:40px}
+.project-tools h2{font-size:20px;font-weight:700}
+.project-tools .portfolio-tools{margin-bottom:0}
+.project-page .project-section-block{border-color:#dce8e1;margin-bottom:26px}
+.project-page .project-section-block>h2{font-size:26px;letter-spacing:-.6px;font-weight:700;line-height:1.35;margin:0 0 18px}
+.project-overview>h2{font-size:21px!important;display:flex;gap:12px;align-items:center}
+.project-overview>h2 i{color:#008776}
+.project-page .project-section-block p{color:#52685e}
+.project-page .project-overview>p{font-size:15px;margin-bottom:12px}
+.project-page .project-count{display:inline-block;border:1px solid #cee1d5;background:#f1f7f3;border-radius:5px;padding:4px 10px;font-size:12px!important;margin:0!important;color:#267157!important}
+.project-page .subproject-tab-nav{border-color:#d4e5da}
+.project-page .subproject-tab-btn{font-family:inherit;min-height:46px;color:#4b675b}
+.project-page .subproject-tab-btn.active{color:#006b5b}
+.project-page .subproject-tab-pane{display:block}
+.project-page .project-tabs-ready .subproject-tab-pane:not(.active){display:none}
+.project-page .project-description{font-size:17px!important;line-height:1.9!important;max-width:900px}
+.project-spec{margin:26px 0;padding:18px 22px;border-left:3px solid #008776;background:#f0f7f3;border-radius:0 8px 8px 0}
+.project-spec dt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#4a7461;font-weight:600;margin-bottom:6px}
+.project-spec dd{font-size:19px;font-weight:650;color:#13513d;margin:0;line-height:1.7}
+.project-focus{border-top:1px solid #e4ece7;padding-top:23px;margin-top:28px}
+.project-page .project-focus h3{font-size:16px;color:#3a5b4a;margin-bottom:16px}
+.project-focus ul{padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px 24px;list-style:none}
+.project-focus li{font-size:14px;display:flex;gap:8px;align-items:baseline;color:#52685e}
+.project-focus i{color:#008776}
+.project-page-actions{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:5px 0 32px}
+.project-page-actions a{font-size:14px;display:inline-flex;align-items:center;gap:9px;font-weight:600}
+.project-cv-link{padding:11px 17px;border:1px solid #b7d3c3;border-radius:6px;background:#fff}
+.project-related{border-top:1px solid #dce8e1;padding-top:28px}
+.project-related h2{font-size:18px;font-weight:650;margin-bottom:18px}
+.project-related>div{display:flex;flex-wrap:wrap;gap:12px}
+.project-related a{display:inline-flex;gap:16px;align-items:center;background:#fff;padding:13px 18px;border:1px solid #d5e4db;border-radius:7px;font-size:14px}
+.project-page .footer{margin-top:0}
+@media(max-width:991px){.project-track-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-track-link .track-card-body h2{min-height:0}.project-page .track-card-body>p{min-height:0}}
+@media(max-width:600px){.project-hero{padding:102px 0 44px;min-height:330px}.project-hero h1{font-size:32px;letter-spacing:-1px}.project-hero-description{font-size:15px}.project-breadcrumbs ol{margin-bottom:22px;font-size:12px}.project-content{padding:30px 0 42px}.project-track-grid{grid-template-columns:1fr;gap:20px}.project-page .project-section-block{padding:24px 20px}.project-page .project-section-block>h2{font-size:23px}.project-page .subproject-tab-nav{gap:5px;padding:5px}.project-page .subproject-tab-btn{flex:1 1 46%;min-width:120px;padding:10px;font-size:12px}.project-spec{padding:14px 16px}.project-spec dd{font-size:17px}.project-page .project-description{font-size:15px!important}.project-focus ul{display:grid;gap:12px}.project-related>div{display:grid}.project-page-actions{gap:20px}.project-index-intro h2{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.project-hero #network-canvas{display:none}}
+@media print{.project-hero #network-canvas,.project-tab-nav,.project-page-actions,.project-related{display:none}.project-hero{padding:20px 0;min-height:0}.project-page .subproject-tab-pane{display:block!important}.project-content{padding:20px 0}.project-section-block{break-inside:avoid}}
