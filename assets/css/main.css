@@ -25,7 +25,7 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #545454;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #b8a07e;
+  --accent-color: #006b5b;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -45,14 +45,14 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #898989;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #b8a07e;
+  --nav-dropdown-hover-color: #006b5b;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f3f1f0;
+  --background-color: #edf5f1;
   --surface-color: #ffffff;
 }
 
@@ -197,7 +197,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(82, 78, 68, 0.8);
+  --background-color: rgba(0, 63, 55, 0.8);
 }
 
 /*--------------------------------------------------------------
@@ -1043,7 +1043,7 @@ section,
 .portfolio .portfolio-content:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
-  border-color: #3b82f6;
+  border-color: #008776;
 }
 
 .portfolio .portfolio-content img {
@@ -1138,7 +1138,7 @@ section,
 .track-card-container:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
-  border-color: #3b82f6;
+  border-color: #008776;
 }
 
 .track-card-img-wrap {
@@ -1192,7 +1192,7 @@ section,
 }
 
 .track-badge.precision {
-  background: rgba(13, 110, 253, 0.85);
+  background: rgba(0, 107, 91, 0.85);
 }
 
 .track-badge.speed {
@@ -1217,7 +1217,7 @@ section,
 }
 
 .track-card-container:hover .track-card-body h4 {
-  color: #0d6efd;
+  color: #006b5b;
 }
 
 .track-card-body p {
@@ -1230,7 +1230,7 @@ section,
 
 .track-card-footer {
   padding-top: 14px;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid #edf5f1;
 }
 
 .track-explore-btn {
@@ -1239,7 +1239,7 @@ section,
   gap: 8px;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0d6efd;
+  color: #006b5b;
   transition: gap 0.25s ease, color 0.25s ease;
 }
 
@@ -1249,7 +1249,7 @@ section,
 }
 
 .track-card-container:hover .track-explore-btn {
-  color: #0b5ed7;
+  color: #004f44;
   gap: 12px;
 }
 
@@ -1833,7 +1833,7 @@ section,
 }
 
 .btn-custom {
-  background-color: #b8a07e;
+  background-color: #006b5b;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -1844,14 +1844,14 @@ section,
 }
 
 .btn-custom:hover {
-  background-color: #9e8c6f;
+  background-color: #004f44;
   color: #ffffff;
 }
 
 .btn-custom-outline {
   background-color: transparent;
-  color: #b8a07e;
-  border: 1px solid #b8a07e;
+  color: #006b5b;
+  border: 1px solid #006b5b;
   padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
@@ -1862,7 +1862,7 @@ section,
 }
 
 .btn-custom-outline:hover {
-  background-color: #b8a07e;
+  background-color: #006b5b;
   color: #ffffff;
 }
 
@@ -2079,7 +2079,7 @@ section,
 }
 
 .impact-badge.speed {
-  background: #007bff;
+  background: #006b5b;
 }
 
 .impact-badge.precision {
@@ -2207,12 +2207,12 @@ section,
 .track-modal-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 22px 28px;
-  background: #f8fafc;
+  background: #f4f9f6;
 }
 
 .track-modal-body {
   padding: 28px;
-  background: #fcfcfd;
+  background: #fbfdfc;
 }
 
 .track-modal-img-container {
@@ -2281,7 +2281,7 @@ section,
   gap: 10px;
   margin-bottom: 28px;
   padding: 6px;
-  background: #f1f5f9;
+  background: #edf5f1;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
 }
@@ -2311,7 +2311,7 @@ section,
 
 .subproject-tab-btn.active {
   background: #ffffff;
-  color: #0d6efd;
+  color: #006b5b;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
@@ -2459,7 +2459,7 @@ section,
 }
 
 .stat-card {
-  background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+  background: linear-gradient(145deg, #f4f9f6, #edf5f1);
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 20px;
@@ -2475,7 +2475,7 @@ section,
 .stat-card .stat-number {
   font-size: 28px;
   font-weight: 800;
-  color: #0d6efd;
+  color: #006b5b;
   font-family: var(--heading-font);
   line-height: 1.1;
   margin-bottom: 6px;
@@ -2518,16 +2518,16 @@ section,
 
 .resource-link-card i {
   font-size: 22px;
-  color: #0d6efd;
+  color: #006b5b;
   transition: transform 0.25s ease;
 }
 
 .resource-link-card:hover {
-  border-color: #0d6efd;
-  background: #f0f7ff;
-  color: #0d6efd;
+  border-color: #006b5b;
+  background: #e9f5ef;
+  color: #006b5b;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 107, 91, 0.1);
 }
 
 .resource-link-card:hover i {
@@ -2630,7 +2630,7 @@ section,
 
 .image-compare-badge.left {
   left: 12px;
-  background: rgba(13, 110, 253, 0.85);
+  background: rgba(0, 107, 91, 0.85);
   color: #ffffff;
 }
 
@@ -2677,15 +2677,15 @@ section,
 }
 
 .dataset-pill:hover {
-  background: #f1f5f9;
+  background: #edf5f1;
   color: #0f172a;
 }
 
 .dataset-pill.active {
-  background: #0d6efd;
+  background: #006b5b;
   color: #ffffff;
-  border-color: #0d6efd;
-  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.25);
+  border-color: #006b5b;
+  box-shadow: 0 2px 6px rgba(0, 107, 91, 0.25);
 }
 
 .resource-hover-card {
@@ -2695,7 +2695,7 @@ section,
 .resource-hover-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
-  border-color: #0d6efd !important;
+  border-color: #006b5b !important;
 }
 
 /*--------------------------------------------------------------
@@ -2739,8 +2739,8 @@ section,
 }
 
 .transform-card.original-card {
-  border: 1.5px solid #0d6efd;
-  background: #f8faff;
+  border: 1.5px solid #006b5b;
+  background: #f3f9f6;
 }
 
 .transform-card-header {
@@ -2783,7 +2783,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0d6efd;
+  color: #006b5b;
   font-size: 22px;
 }
 
@@ -2886,27 +2886,27 @@ section,
 
 .exp-timeline-row:hover .exp-nav-card {
   border-color: var(--accent-color);
-  background: #faf8f5;
+  background: #f2f8f5;
   transform: translateX(4px);
 }
 
 .exp-timeline-row:hover .timeline-bullet {
   border-color: var(--accent-color);
-  background: #faf8f5;
+  background: #f2f8f5;
 }
 
 /* Active State: Glowing Center Bullet & Card Highlight */
 .exp-timeline-row.active .timeline-bullet {
   background: var(--accent-color);
   border-color: #ffffff;
-  box-shadow: 0 0 0 3px var(--accent-color), 0 0 14px rgba(184, 160, 126, 0.6);
+  box-shadow: 0 0 0 3px var(--accent-color), 0 0 14px rgba(0, 107, 91, 0.6);
   transform: scale(1.25);
 }
 
 .exp-timeline-row.active .exp-nav-card {
   border-left-color: var(--accent-color);
   background: #ffffff;
-  box-shadow: 0 8px 24px rgba(184, 160, 126, 0.22);
+  box-shadow: 0 8px 24px rgba(0, 107, 91, 0.22);
   border-color: #cbd5e1;
   border-left-width: 4px;
   transform: translateX(4px);
@@ -3040,7 +3040,7 @@ section,
     transform: none;
     border-left-color: #cbd5e1;
     border-top-color: var(--accent-color);
-    box-shadow: 0 4px 14px rgba(184, 160, 126, 0.2);
+    box-shadow: 0 4px 14px rgba(0, 107, 91, 0.2);
   }
 
   .exp-nav-title {
