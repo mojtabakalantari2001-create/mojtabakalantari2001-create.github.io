@@ -1,14 +1,9 @@
-# Template source and attribution
+# Active site implementation
 
-The website layout and interaction code were adapted from Farhad Hoseyni's website repository, used with his permission as reported by Mojtaba Kalantari:
-https://github.com/mamdaliof/mamdaliof.github.io
+The active portfolio HTML, assets/css/portfolio.css, assets/js/portfolio.js, and assets/js/rf-waves.js are independently authored for Mojtaba Kalantari. Active pages do not load BootstrapMade / Folio styles, scripts, or template markup.
 
-Source tree: a3fb7b3698f0faa576d98d0aebb0fc0a6050104f (master).
+The former Folio-based implementation is retained in Git history. Legacy unreferenced files retain their original notices. The active implementation replaces the former template dependency; the BootstrapMade footer is no longer part of the site.
 
-The underlying Folio template is by BootstrapMade:
-https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-https://bootstrapmade.com/license/
+Bootstrap Icons 1.11.3 is retained as a separate MIT-licensed icon font. Its original copyright and license header remain in assets/vendor/bootstrap-icons/bootstrap-icons.css.
 
-Original template headers and vendor notices are retained. The footer retains the required “Designed by BootstrapMade” credit. Bootstrap, Bootstrap Icons, AOS, and Typed.js retain their respective notices and licenses.
-
-Personal text, project details, social links, portrait and CV belong to Mojtaba Kalantari. The existing cv.pdf is preserved byte for byte. The source site's analytics, custom domain configuration, personal documents and project images are not part of this adaptation.
+All personal content, project facts, social links, portraits, and the original cv.pdf are preserved. The RF wavefront canvas is a decorative illustration of expanding wavefronts and pointer-controlled reflection, not a quantitative electromagnetic solver.
