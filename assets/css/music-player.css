@@ -1,0 +1,56 @@
+/* Native audio controls, shared by the home page and all detail pages. */
+.music-player {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 40;
+  max-width: calc(100vw - 32px);
+  color: #123f35;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+}
+
+.music-player > summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-height: 44px;
+  margin-left: auto;
+  padding: 9px 16px;
+  border: 1px solid #c4ded3;
+  border-radius: 24px;
+  background: #006b5b;
+  color: #fff;
+  box-shadow: 0 4px 18px #123f3524;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+}
+
+.music-player > summary::-webkit-details-marker { display: none; }
+.music-player > summary::marker { content: ''; }
+.music-player > summary:focus-visible { outline: 3px solid #009782; outline-offset: 4px; }
+.music-player-note { font-size: 21px; line-height: 1; }
+.music-player-chevron { display: inline-block; transform: rotate(180deg); }
+.music-player[open] .music-player-chevron { transform: none; }
+.music-player[open] { width: 330px; }
+
+.music-player-panel {
+  margin-top: 8px;
+  padding: 12px 10px;
+  border: 1px solid #c4ded3;
+  border-radius: 16px;
+  background: #f4f9f6;
+  box-shadow: 0 6px 24px #123f3524;
+}
+
+.music-player audio {
+  display: block;
+  width: 100%;
+  height: 54px;
+  color-scheme: light;
+}
+
+@media print { .music-player { display: none; } }
